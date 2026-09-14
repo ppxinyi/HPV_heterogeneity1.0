@@ -1,0 +1,1 @@
+Differential expression analysis was performed using DESeq2 and limma. Cytokine signaling and cell-type enrichment were evaluated using CytoSig and xCell, respectively. Differences between two groups were assessed using the Wilcoxon rank-sum test, while comparisons involving more than two groups were performed using one-way analysis of variance (ANOVA).
