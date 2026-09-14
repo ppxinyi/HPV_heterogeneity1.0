@@ -1,2 +1,8 @@
+## Figure 5
 
-Figrue 5 used for Comparison of HPV integration events and structures between primary and recurrent samples. B is created by the hpv integration structure described in figure1. Figure5-B created by plot6.R and Figure6_hpvJunciton.ipynb.
+Figure 5 compares HPV integration events and structures between primary and recurrent samples.
+
+- **Figure 5A** was generated following the analysis in `Figure5_hpvJunciton.ipynb`.
+- The HPV integration structures shown in **Figure 5B** were identified using the HPV integration analysis pipeline described for **Figure 1**.
+- **Figure 5C** was generated using `Figure5C.ipynb` and `plot5.R`.
+- **Figure 5D** was generated using `Figure5D.ipynb`.
