@@ -1,0 +1,7 @@
+Instruction on how to replicate detect duplication structures:
+Use this collection: https://app.globus.org/file-manager?origin_id=14a13ba4-9161-4e92-bbaa-1b51f5f297a8&origin_path=%2F
+or the scripts in `all_HPV_scripts.tar.gz` shared in Dropbox.
+1. To generate the `{sample}_read_depth.txt`: Use the scripts under `targeted_exom/our_pip/newVersion/readDepth` to run them on the alignment output from Step1 of SearcHPV (alignment.RG.indelre.mkdup.sort.bam). All the results of SearcHPV in this manuscript was uploaded to DataDen. Xiaomeng should know where they are.
+2. To generate the `readDepthAll.txt` and `readNumAll.txt`, run the scripts under `targeted_exom/our_pip/newVersion/normReadDepth/house_keep_gene.py`. The input will be the files from step 1.
+3. Record the background reads copy number around the integrations. This step was commented out in this notebook because it's a time consumping step. The same script is under `targeted_exom/our_pip/newVersion/normReadDepth` as well. The script is `bg_cov_at_ins.py` and submit it in SBATCH use `bash_bg_cov_at_ins.sh`. It might takes over a day to get the results. You could edit the file to parrallel the process and make a faster version script.
+4. After 1-3, run the notebook `detect_duplication_structures.ipynb`. All the other inputs data are in the collection mentioned.
